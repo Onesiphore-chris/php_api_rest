@@ -27,7 +27,7 @@
 
         public function readAll(){
             //on ecrit la requete
-            $sql = "SELECT * FROM ";
+            $sql = "SELECT nom $this->table";
 
              //execute la requette 
             $req = $this->connexion->query($sql);
