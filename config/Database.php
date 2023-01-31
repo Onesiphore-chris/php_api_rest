@@ -12,7 +12,8 @@
 
     // connexion a la base de donnee
 
-            public function getConnexion(){
+            public function getConnexion()
+            {
 
             $dbb = null;
 
@@ -21,9 +22,10 @@
                 [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-                ]);
+                ]
+            );
             } catch (\PDOException $e) {
-                echo"erreur de connexion :".$e->getMessage();
+                echo"Erreur de connexion :" .$e->getMessage();
 
             }
             return $dbb;
